@@ -57,3 +57,4 @@ if __name__ == "__main__":
 
     print(UserController.search_email("maria@yandex.ru"))
     # UserController.delete(2)
+
