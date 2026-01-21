@@ -5,7 +5,6 @@ from Controllers.UserController import *
 from Views.SearchView import SaerchView
 
 
-
 class UserView(Tk):
     def __init__(self):
         super().__init__()
@@ -27,7 +26,7 @@ class UserView(Tk):
             pady=10,  # расположение по оси y от верней левой точки окна
 
         )
-        # Фрайм в которм расположен текст Добавить Пользователя (находится внутри фрейма add_frame)
+        # Фрейм в котором расположен текст Добавить Пользователя (находится внутри фрейма add_frame)
         self.add_title_frame = ttk.Frame(self.add_frame,
                                          relief=SOLID,  # тип линии фрейма - СПЛОШНАЯ
                                          borderwidth=1,  # ширина границы фрейма

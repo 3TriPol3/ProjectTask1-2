@@ -8,4 +8,3 @@ mysql_db = MySQLDatabase('BessM82_g_task2',
                          port=3306)
 if __name__ == '__main__':
     print(mysql_db.connect())
-    # Проверка 1213123123 Проверка
