@@ -8,7 +8,7 @@ class User(BaseModel):
     name = CharField(unique=True) # Имя
     email = CharField() # Эдектронная почта
     age = IntegerField() # Возраст
-    registration_date = DateTimeField() # Дата регистрации
+    registration_date = DateField() # Дата регистрации
 
 if __name__ == "__main__":
     mysql_db.create_tables([User])
