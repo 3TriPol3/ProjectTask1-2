@@ -118,6 +118,15 @@ class UserView(Tk):
         self.button_search = ttk.Button(self.search_frame, text="Найти Пользователя", command=self.search)
         self.button_search.grid(row=1, column=2, padx=5, sticky="s")
 
+
+
+
+        self.button_delete = ttk.Button(self.delete_frame, text="Удаление пользователя", command=self.search)
+        self.button_delete.grid(row=1, column=2, padx=5, sticky="s")
+
+
+
+
         # # Кнопка перехода в окно передачи предмета
         # self.update_item = ttk.Button(self, text="Передать предмет другому игроку", command=self.all)
         # self.update_item.pack()
