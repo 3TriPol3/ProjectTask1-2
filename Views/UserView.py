@@ -1,7 +1,6 @@
 from tkinter import *
 from tkinter import ttk
 from Controllers.UserController import *
-# from Views.SaleItemView import SaleItemView
 from Views.SearchView import SaerchView
 
 
@@ -38,7 +37,7 @@ class UserView(Tk):
                                   )
         self.add_title = ttk.Label(self.add_title_frame, text="Добавить Пользователя")
         self.add_title.pack()
-        # Фрайм в которм расположены окна ввода данных о Пользователе (находится внутри фрейма add_frame)
+        # Фрайм в котором расположены окна ввода данных о Пользователе (находится внутри фрейма add_frame)
         self.add_input_frame = ttk.Frame(self.add_frame,
                                          relief=SOLID,  # тип линии фрейма - СПЛОШНАЯ
                                          borderwidth=1,  # ширина границы фрейма

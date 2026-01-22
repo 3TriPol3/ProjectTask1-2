@@ -33,10 +33,10 @@ class UserController:
     def search_email(cls,email):
         # Метод выводит список записей, если встречается характеристика email
         # list = [] # создание пустого списка
-        query = User.select().where(User.email == email) # переменной передаём список записей у которых в поле email есть email из аргумента метода
-        # for item in query:
+        request = User.select().where(User.email == email) # Переменной передаём список записей у которых в поле email есть email из аргумента метода
+        # for item in request:
         #     list.append(item.name)
-        return query
+        return request
 
     @classmethod
     def delete(cls, id):
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     )
     UserController.update(2,'Александра Петрова')
     for item in UserController.get():
-        print(item.name, item.name)
+        print(item.name, item.email)
 
     print(UserController.search_email("maria@yandex.ru"))
     # UserController.delete(2)

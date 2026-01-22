@@ -4,7 +4,7 @@ class User(BaseModel):
     '''
     Данный класс описывает таблицу в БД с пользователями
     '''
-    id  = PrimaryKeyField()
+    id  = PrimaryKeyField() # id
     name = CharField(unique=True) # Имя
     email = CharField() # Эдектронная почта
     age = IntegerField() # Возраст
