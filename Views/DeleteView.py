@@ -35,7 +35,7 @@ class DeleteView(Tk):
         self.table()
         # Для события выбора строки из таблицы вызову метод row_selected
         self.table_data.bind("<<TreeviewSelect>>", self.row_selected)
-        # Передача предмета
+        # Удаление пользователя
         self.delete_frame = ttk.Frame(self,padding=[20])
         self.delete_frame.pack(anchor=CENTER, padx=10,pady=10)
 

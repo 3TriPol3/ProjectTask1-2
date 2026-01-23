@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from Controllers.UserController import *
 from Views.SearchView import SaerchView
+from Views.DeleteView import DeleteView
 
 
 class UserView(Tk):
@@ -117,22 +118,16 @@ class UserView(Tk):
         self.button_search = ttk.Button(self.search_frame, text="Найти Пользователя", command=self.search)
         self.button_search.grid(row=1, column=2, padx=5, sticky="s")
 
+        # Фрейм удаления
+        self.delete_frame = ttk.Frame(self, padding=[20])
+        self.delete_frame.pack(anchor=CENTER, padx=10, pady=10)
 
+        # Кнопка перехода в окно удаления пользователей
+        self.button_delete = ttk.Button(self, text="Удаление пользователя", command=self.delete)
+        self.button_delete.pack()
 
-
-        self.button_delete = ttk.Button(self.delete_frame, text="Удаление пользователя", command=self.search)
-        self.button_delete.grid(row=1, column=2, padx=5, sticky="s")
-
-
-
-
-        # # Кнопка перехода в окно передачи предмета
-        # self.update_item = ttk.Button(self, text="Передать предмет другому игроку", command=self.all)
-        # self.update_item.pack()
-
-    # def all(self):
-    #     window = SaleItemView()
-
+    def delete(self):
+        window = DeleteView()
     # метод передачи значения из строки ввода text_search в окно SaerchView
     def search(self):
         self.string = self.text_search.get("0.0", "end")  # передачи значения из строки ввода text_search
