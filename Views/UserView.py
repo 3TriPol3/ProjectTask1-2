@@ -30,7 +30,7 @@ class UserView(Tk):
         self.add_title_frame = ttk.Frame(self.add_frame,
                                          relief=SOLID,  # тип линии фрейма - СПЛОШНАЯ
                                          borderwidth=1,  # ширина границы фрейма
-                                         padding=[8, 10])
+                                         padding=[8, 10]) # внутренние отступы фрейма
         self.add_title_frame.pack(anchor=CENTER,  # расположение по центру
                                   fill=X,  # заполнение
                                   padx=10,  # расположение по оси x от верней левой точки окна
