@@ -128,6 +128,7 @@ class UserView(Tk):
 
     def delete(self):
         window = DeleteView()
+
     # метод передачи значения из строки ввода text_search в окно SaerchView
     def search(self):
         self.string = self.text_search.get("0.0", "end")  # передачи значения из строки ввода text_search
